@@ -1,4 +1,4 @@
-# http-code
+# easy-http-code
 
 ## Sumary
 Builded to make easier HTTP codes use.
