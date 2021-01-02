@@ -1,6 +1,6 @@
 {
   "name": "easy-http-code",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "main": "lib/index.js",
   "repository": "https://github.com/matheusfenolio/easy-http-code.git",
   "author": "Matheus Prado <matheusfenoliodoprado@outlook.com>",
