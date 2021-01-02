@@ -6,125 +6,125 @@ export enum HttpStatus {
     'OK' = 200,
     'CREATED' = 201,   
     'ACCEPTED' = 202, 
-    'NON-AUTHORITATIVE INFORMATION' = 203,
-    'NO CONTENT' = 204, 
-    'RESET CONTENT' = 205,  
-    'PARTIAL CONTENT' = 206,  
-    'MULTI-STATUS' = 207, 
-    'ALREADY REPORTED' = 208, 
-    'IM USED' = 226, 
-    'MULTIPLE CHOICES' = 300, 
-    'MOVED PERMANENTLY' = 301,
+    'NON_AUTHORITATIVE_INFORMATION' = 203,
+    'NO_CONTENT' = 204, 
+    'RESET_CONTENT' = 205,  
+    'PARTIAL_CONTENT' = 206,  
+    'MULTI_STATUS' = 207, 
+    'ALREADY_REPORTED' = 208, 
+    'IM_USED' = 226, 
+    'MULTIPLE_CHOICES' = 300, 
+    'MOVED_PERMANENTLY' = 301,
     'FOUND' = 302, 
-    'SEE OTHER' = 303, 
-    'NOT MODIFIED' = 304,  
-    'USE PROXY' = 305, 
-    'TEMPORARY REDIRECT' = 307, 
-    'PERMANENT REDIRECT' = 308, 
-    'BAD REQUEST' = 400, 
+    'SEE_OTHER' = 303, 
+    'NOT_MODIFIED' = 304,  
+    'USE_PROXY' = 305, 
+    'TEMPORARY_REDIRECT' = 307, 
+    'PERMANENT_REDIRECT' = 308, 
+    'BAD_REQUEST' = 400, 
     'UNAUTHORIZED' = 401, 
-    'PAYMENT REQUIRED' = 402, 
+    'PAYMENT_REQUIRED' = 402, 
     'FORBIDDEN' = 403, 
-    'NOT FOUND' = 404, 
-    'METHOD NOT ALLOWED' = 405, 
-    'NOT ACCEPTABLE' = 406, 
-    'PROXY AUTHENTICATION REQUIRED' = 407, 
-    'REQUEST TIMEOUT' = 408, 
+    'NOT_FOUND' = 404, 
+    'METHOD_NOT_ALLOWED' = 405, 
+    'NOT_ACCEPTABLE' = 406, 
+    'PROXY_AUTHENTICATION_REQUIRED' = 407, 
+    'REQUEST_TIMEOUT' = 408, 
     'CONFLICT' = 409, 
     'GONE' = 410, 
-    'LENGTH REQUIRED' = 411, 
-    'PRECONDITION FAILED' = 412, 
-    'PAYLOAD TOO LARGE' = 413, 
-    'URI TOO LONG' = 414, 
-    'UNSUPPORTED MEDIA TYPE' = 415, 
-    'RANGE NOT SATISFIABLE' = 416, 
-    'EXPECTATION FAILED' = 417, 
-    'MISDIRECTED REQUEST' = 421, 
-    'UNPROCESSABLE ENTITY' = 422, 
+    'LENGTH_REQUIRED' = 411, 
+    'PRECONDITION_FAILED' = 412, 
+    'PAYLOAD_TOO_LARGE' = 413, 
+    'URI_TOO_LONG' = 414, 
+    'UNSUPPORTED_MEDIA TYPE' = 415, 
+    'RANGE_NOT_SATISFIABLE' = 416, 
+    'EXPECTATION_FAILED' = 417, 
+    'MISDIRECTED_REQUEST' = 421, 
+    'UNPROCESSABLE_ENTITY' = 422, 
     'LOCKED' = 423,
-    'FAILED DEPENDENCY' = 424,
-    'TOO EARLY' = 425, 
-    'UPGRADE REQUIRED' = 426, 
-    'PRECONDITION REQUIRED' = 428,
-    'TOO MANY REQUESTS' = 429,
-    'REQUEST HEADER FIELDS TOO LARGE' = 431, 
-    'UNAVAILABLE FOR LEGAL REASONS' = 451, 
-    'INTERNAL SERVER ERROR' = 500, 
-    'NOT IMPLEMENTED' = 501, 
-    'BAD GATEWAY' = 502, 
-    'SERVICE UNAVAILABLE' = 503, 
-    'GATEWAY TIMEOUT' = 504, 
-    'HTTP VERSION NOT SUPPORTED' = 505, 
-    'VARIANT ALSO NEGOTIATES' = 506, 
-    'INSUFFICIENT STORAGE' = 507, 
-    'LOOP DETECTED' = 508, 
-    'NOT EXTENDED' = 510, 
-    'NETWORK AUTHENTICATION REQUIRED' = 511, 
+    'FAILED_DEPENDENCY' = 424,
+    'TOO_EARLY' = 425, 
+    'UPGRADE_REQUIRED' = 426, 
+    'PRECONDITION_REQUIRED' = 428,
+    'TOO_MANY_REQUESTS' = 429,
+    'REQUEST_HEADER_FIELDS_TOO_LARGE' = 431, 
+    'UNAVAILABLE_FOR_LEGAL_REASONS' = 451, 
+    'INTERNAL_SERVER_ERROR' = 500, 
+    'NOT_IMPLEMENTED' = 501, 
+    'BAD_GATEWAY' = 502, 
+    'SERVICE_UNAVAILABLE' = 503, 
+    'GATEWAY_TIMEOUT' = 504, 
+    'HTTP_VERSION_NOT_SUPPORTED' = 505, 
+    'VARIANT_ALSO_NEGOTIATES' = 506, 
+    'INSUFFICIENT_STORAGE' = 507, 
+    'LOOP_DETECTED' = 508, 
+    'NOT_EXTENDED' = 510, 
+    'NETWORK_AUTHENTICATION_REQUIRED' = 511, 
 }
 
 export const HttpMessage = (code: number): string => {
     switch (code) {
-        case 100: return 'CONTINUE';
-        case 101: return 'SWITCHING';
-        case 102: return 'PROCESSING';
-        case 103: return 'EARLY HINTS';
-        case 200: return 'OK';
-        case 201: return 'CREATED'; 
-        case 202: return 'ACCEPTED';
-        case 203: return 'NON-AUTHORITATIVE INFORMATION';
-        case 204: return 'NO CONTENT';
-        case 205: return 'RESET CONTENT'; 
-        case 206: return 'PARTIAL CONTENT'; 
-        case 207: return 'MULTI-STATUS';
-        case 208: return 'ALREADY REPORTED';
-        case 226: return 'IM USED';
-        case 300: return 'MULTIPLE CHOICES'; 
-        case 301: return 'MOVED PERMANENTLY'; 
-        case 302: return 'FOUND'; 
-        case 303: return 'SEE OTHER'; 
-        case 304: return 'NOT MODIFIED'; 
-        case 305: return 'USE PROXY';
-        case 307: return 'TEMPORARY REDIRECT';
-        case 308: return 'PERMANENT REDIRECT';
-        case 400: return 'BAD REQUEST';
-        case 401: return 'UNAUTHORIZED';
-        case 402: return 'PAYMENT REQUIRED';
-        case 403: return 'FORBIDDEN';
-        case 404: return 'NOT FOUND';
-        case 405: return 'METHOD NOT ALLOWED';
-        case 406: return 'NOT ACCEPTABLE';
-        case 407: return 'PROXY AUTHENTICATION REQUIRED';
-        case 408: return 'REQUEST TIMEOUT';
-        case 409: return 'CONFLICT';
-        case 410: return 'GONE';
-        case 411: return 'LENGTH REQUIRED';
-        case 412: return 'PRECONDITION FAILED';
-        case 413: return 'PAYLOAD TOO LARGE';
-        case 414: return 'URI TOO LONG';
-        case 415: return 'UNSUPPORTED MEDIA TYPE';
-        case 416: return 'RANGE NOT SATISFIABLE';
-        case 417: return 'EXPECTATION FAILED';
-        case 421: return 'MISDIRECTED REQUEST';
-        case 422: return 'UNPROCESSABLE ENTITY';
-        case 423: return 'LOCKED';
-        case 424: return 'FAILED DEPENDENCY';
-        case 425: return 'TOO EARLY';
-        case 426: return 'UPGRADE REQUIRED';
-        case 428: return 'PRECONDITION REQUIRED';
-        case 429: return 'TOO MANY REQUESTS';
-        case 431: return 'REQUEST HEADER FIELDS TOO LARGE';
-        case 451: return 'UNAVAILABLE FOR LEGAL REASONS';
-        case 500: return 'INTERNAL SERVER ERROR';
-        case 501: return 'NOT IMPLEMENTED';
-        case 502: return 'BAD GATEWAY';
-        case 503: return 'SERVICE UNAVAILABLE';
-        case 504: return 'GATEWAY TIMEOUT';
-        case 505: return 'HTTP VERSION NOT SUPPORTED';
-        case 506: return 'VARIANT ALSO NEGOTIATES';
-        case 507: return 'INSUFFICIENT STORAGE';
-        case 508: return 'LOOP DETECTED';
-        case 510: return 'NOT EXTENDED';
-        case 511: return 'NETWORK AUTHENTICATION REQUIRED';
-        default: return 'UNSIGNED'
+        case 100: return 'Continue';
+        case 101: return 'Switching';
+        case 102: return 'Processing';
+        case 103: return 'Early hints';
+        case 200: return 'Ok';
+        case 201: return 'Created'; 
+        case 202: return 'Accepted';
+        case 203: return 'Non-authoritative information';
+        case 204: return 'No content';
+        case 205: return 'Reset content'; 
+        case 206: return 'Partial content'; 
+        case 207: return 'Multi-status';
+        case 208: return 'Already reported';
+        case 226: return 'Im used';
+        case 300: return 'Multiple choices'; 
+        case 301: return 'Moved permanently'; 
+        case 302: return 'Found'; 
+        case 303: return 'See other'; 
+        case 304: return 'Not modified'; 
+        case 305: return 'Use proxy';
+        case 307: return 'Temporary redirect';
+        case 308: return 'Permanent redirect';
+        case 400: return 'Bad request';
+        case 401: return 'Unauthorized';
+        case 402: return 'Payment required';
+        case 403: return 'Forbidden';
+        case 404: return 'Not found';
+        case 405: return 'Method not allowed';
+        case 406: return 'Not acceptable';
+        case 407: return 'Proxy authentication required';
+        case 408: return 'Request timeout';
+        case 409: return 'Conflict';
+        case 410: return 'Gone';
+        case 411: return 'Length required';
+        case 412: return 'Precondition failed';
+        case 413: return 'Payload too large';
+        case 414: return 'Uri too long';
+        case 415: return 'Unsupported media type';
+        case 416: return 'Range not satisfiable';
+        case 417: return 'Expectation failed';
+        case 421: return 'Misdirected request';
+        case 422: return 'Unprocessable entity';
+        case 423: return 'Locked';
+        case 424: return 'Failed dependency';
+        case 425: return 'Too early';
+        case 426: return 'Upgrade required';
+        case 428: return 'Precondition required';
+        case 429: return 'Too many requests';
+        case 431: return 'Request header fields too large';
+        case 451: return 'Unavailable for legal reasons';
+        case 500: return 'Internal server error';
+        case 501: return 'Not implemented';
+        case 502: return 'Bad gateway';
+        case 503: return 'Service unavailable';
+        case 504: return 'Gateway timeout';
+        case 505: return 'Http version not supported';
+        case 506: return 'Variant also negotiates';
+        case 507: return 'Insufficient storage';
+        case 508: return 'Loop detected';
+        case 510: return 'Not extended';
+        case 511: return 'Network authentication required';
+        default: return 'Unsigned'
     }
 }
