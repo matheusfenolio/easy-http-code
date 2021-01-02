@@ -1,6 +1,6 @@
 {
-  "name": "http-code",
-  "version": "1.0.0",
+  "name": "http-code-status",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "repository": "https://github.com/matheusfenolio/http-code.git",
   "author": "Matheus Prado <matheusfenoliodoprado@outlook.com>",
@@ -10,5 +10,11 @@
   },
   "devDependencies": {
     "typescript": "^4.1.3"
-  }
+  },
+  "keywords": [
+    "http",
+    "code",
+    "codes",
+    "status"
+  ]
 }
