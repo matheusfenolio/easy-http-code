@@ -13,7 +13,7 @@ console.log(HttpMessage(204))
 
 ### Typescript
 ```javascript
-import { HttpStatus, HttpMessage } from './lib/index';
+import { HttpStatus, HttpMessage } from 'easy-http-code';
 
 console.log(HttpStatus.NO_CONTENT);
 console.log(HttpMessage(204))
