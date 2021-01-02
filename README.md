@@ -27,3 +27,9 @@ server.get('/endpointOK', (req, res) => {
 
 server.listen(3333);
 ```
+
+```javascript
+import { HttpMessage } from 'easy-http-code';
+
+console.log(HttpMessage(200));
+```
